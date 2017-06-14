@@ -48,6 +48,10 @@ git config --global user.username
 
 git remote add <REMOTENAME> <URL>
 
+<REMOTENAME>:
+origin
+upstream
+
 **Set a URL to a remote**
 
 git remote set-url <REMOTENAME> <URL>
@@ -63,3 +67,7 @@ git push <REMOTENAME> <BRANCH>
 **Pull in changes**
 
 git pull <REMOTENAME> <BRANCHNAME>
+
+**Clone repository**
+
+git clone <URLFROMGITHUB>

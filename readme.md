@@ -16,7 +16,7 @@ git status
 
 **Add a file's changes to be committed**
 
-git add <FILENAME>
+git add FILENAME
 
 **To add all files changes**
 
@@ -46,15 +46,15 @@ git config --global user.username
 
 **Add remote connections**
 
-git remote add <REMOTENAME> <URL>
+git remote add REMOTENAME URL
 
-<REMOTENAME>:
-origin
-upstream
+REMOTENAME:
+- *origin*
+- *upstream*
 
 **Set a URL to a remote**
 
-git remote set-url <REMOTENAME> <URL>
+git remote set-url REMOTENAME URL
 
 **View remote addresses**
 
@@ -62,12 +62,36 @@ git remote -v
 
 **Push changes**
 
-git push <REMOTENAME> <BRANCH>
+git push REMOTENAME> BRANCH
 
 **Pull in changes**
 
-git pull <REMOTENAME> <BRANCHNAME>
+git pull REMOTENAME BRANCHNAME
 
 **Clone repository**
 
-git clone <URLFROMGITHUB>
+git clone URLFROMGITHUB
+
+**Verify what branch you're working on**
+
+git status
+
+**Create a new branch**
+
+git branch BRANCHNAME
+
+**Move onto a branch**
+
+git checkout BRANCHNAME
+
+**List the branches**
+
+git branch
+
+**Rename a branch you're currently on**
+
+git branch -m NEWBRANCHNAME
+
+
+**You can create and switch to a branch in one line**
+git checkout -b BRANCHNAME

@@ -62,11 +62,15 @@ git remote -v
 
 **Push changes**
 
-git push REMOTENAME> BRANCH
+git push REMOTENAME BRANCH
 
 **Pull in changes**
 
 git pull REMOTENAME BRANCHNAME
+
+**See changes to the remote before you pull in**
+
+git fetch --dry-run
 
 **Clone repository**
 
@@ -80,6 +84,10 @@ git status
 
 git branch BRANCHNAME
 
+**You can create and switch to a branch in one line**
+
+git checkout -b BRANCHNAME
+
 **Move onto a branch**
 
 git checkout BRANCHNAME
@@ -92,6 +100,14 @@ git branch
 
 git branch -m NEWBRANCHNAME
 
+**Merge a branch into current branch**
 
-**You can create and switch to a branch in one line**
-git checkout -b BRANCHNAME
+git merge BRANCHNAME
+
+**Delete a local branch**
+
+git branch -d BRANCHNAME
+
+**Delete a remote branch**
+
+git push REMOTENAME --delete BRANCHNAME
